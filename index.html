@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Umfrageformular | survey form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script>
+        function myFunctionDeutsch(){
+        alert("Das Senden Ihrer Daten ist nicht erfolgt, da es sich hierbei nur um ein beispielhaftes Umfrageformular handelt.");
+        }
+
+        function myFunctionEnglisch(){
+        alert("Your data has not been sent because this is only a exemplary survey form.");
+        }
+    </script>
+
+    <div class="container">
+            <span class="dt">Deutsch</span>
+            <input type="checkbox" class="check">
+            <span class="en">English</span>
+            <div class="content contentDeutsch">
+
+        <header>
+            <h1 id="title">Umfrageformular <i class="fa fa-file" aria-hidden="true"></i></h1>
+            <p><em>Vielen Dank, dass Sie sich die Zeit nehmen, um an dieser Umfrage teilzunehmen. Bitte beantworten Sie die Fragen möglichst ehrlich und ohne viel nachzudenken.</em></p>
+            <hr>
+        </header>
+
+        <form id="personal-informations">
+
+        <div class="personal-informations">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Geben Sie Ihren Namen ein" required>
+        </div>
+        <div class="personal-informations">
+            <label for="email" id="email-label">E-Mail</label>
+            <input id="email" type="email" placeholder="Geben Sie Ihre E-Mail Adresse ein" required>
+        </div>
+        <div class="personal-informations">
+            <label for="age" id="number-label">Alter (optional)</label>
+            <input id="number" type="number" placeholder="Alter" min="18" max="99" value="age">
+        </div>
+
+        <p>Wie zufrieden sind Sie bei der Nutzung des Produktes?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>wählen Sie eine Option</option>
+            <option value="1">sehr zufrieden</option>
+            <option value="2">zufrieden</option>
+            <option value="3">weniger zufrieden</option>
+            <option value="4">würde ich nicht weiterempfehlen</option>
+            <option value="5">überhaupt nicht zufrieden</option>
+        </select>
+
+        <p>Wie zufrieden sind Sie mit dem Design des Produktes?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>wählen Sie eine Option</option>
+            <option value="1">sehr zufrieden</option>
+            <option value="2">zufrieden</option>
+            <option value="3">weniger zufrieden</option>
+            <option value="4">würde ich nicht weiterempfehlen</option>
+            <option value="5">überhaupt nicht zufrieden</option>
+        </select>
+
+        <p>Hat das Produkt Ihren Erwartungen entsprochen?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>wählen Sie eine Option</option>
+            <option value="1">ja</option>
+            <option value="2">nein</option>
+            <option value="3">in den meisten Fällen</option>
+        </select>
+
+        <p>Konnten Sie mit dem Produkt Ihr Problem beheben?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>wählen Sie eine Option</option>
+            <option value="1">ja</option>
+            <option value="2">nein</option>
+            <option value="3">in den meisten Fällen</option>
+        </select>
+
+        <div class="recommend">
+            <p>Würden Sie die Firma im Allgemeinen weiterempfehlen?</p>
+            <label><input name="recommendation1" type="radio" value="recommendation1" checked> Definitiv</label><br><br>
+            <label><input name="recommendation1" type="radio" value="recommendation1"> Eventuell</label><br><br>
+            <label><input name="recommendation1" type="radio" value="recommendation1"> Auf keinen Fall</label><br><br>
+        </div>
+
+        <p>Hatten Sie bereits Kontakt mit unserem Kundenservice?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>wählen Sie eine Option</option>
+            <option value="1">ja</option>
+            <option value="2">nein</option>
+        </select>
+
+        <p>Wie würden Sie unseren Kundenservice beschreiben? (mehrere Optionen möglich)</p>
+        <label><input type="checkbox" value="lösungsorientiert"> lösungsorientiert</label><br>
+        <label><input type="checkbox" value="hilfsbereit"> hilfsbereit</label><br>
+        <label><input type="checkbox" value="ausdrucksstark"> ausdrucksstark</label><br>
+        <label><input type="checkbox" value="authentisch"> authentisch</label><br>
+        <label><input type="checkbox" value="effizient"> effizient</label><br>
+        <label><input type="checkbox" value="motiviert"> motiviert</label><br>
+        <label><input type="checkbox" value="freundlich"> freundlich</label><br>
+        <label><input type="checkbox" value="wertschätzend"> wertschätzend</label><br>
+        <label><input type="checkbox" value="zielgerichtet"> zielgerichtet</label><br>
+        <label><input type="checkbox" value="verlässlich"> verlässlich</label><br><br>
+
+        <p>Konnte Ihr Problem durch unseren Kundenservice gelöst werden?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>wählen Sie eine Option</option>
+            <option value="1">ja</option>
+            <option value="2">nein</option>
+            <option value="3">in den meisten Fällen</option>
+        </select>
+
+        <div class="recommend">
+            <p>Würden Sie sich bei Ihrem nächsten Problem erneut an unseren Kundenservice wenden?</p>
+            <label><input name="recommendation2" type="radio" value="recommendation2" checked> Definitiv</label><br><br>
+            <label><input name="recommendation2" type="radio" value="recommendation2"> Eventuell</label><br><br>
+            <label><input name="recommendation2" type="radio" value="recommendation2"> Auf keinen Fall</label><br><br>
+        </div>
+
+        <p>Haben Sie weitere Anmerkungen oder Ergänzungen für uns?</p>
+        <textarea placeholder="Hinterlassen Sie uns gerne einen Kommentar in dem hier vorgesehenen Platz."></textarea><br>
+        <button onclick="myFunctionDeutsch()" type="submit" id="submit" class="submit-button">Senden</button>
+        
+        </form>
+    </div>
+
+    <div class="content contentEnglish">
+        <header>
+            <h1 id="title">survey form <i class="fa fa-file" aria-hidden="true"></i></h1>
+            <p><em>Thank you for taking the time to participate in this survey. Please answer the questions as honestly as possible and without thinking much.</em></p>
+            <hr>
+        </header>
+
+        <form id="personal-informations">
+        <div class="personal-informations">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="personal-informations">
+            <label for="email" id="email-label">E-Mail</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="personal-informations">
+            <label for="age" id="number-label">Age (optional)</label>
+            <input id="number" type="number" placeholder="Age" min="18" max="99" value="age">
+        </div>
+
+        <p>How satisfied are you with the use of the product?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>select an option</option>
+            <option value="1">very satisfied</option>
+            <option value="2">satisfied</option>
+            <option value="3">less satisfied</option>
+            <option value="4">would not recommend</option>
+            <option value="5">not satisfied at all</option>
+        </select>
+
+        <p>How satisfied are you with the design of the product?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>select an option</option>
+            <option value="1">very satisfied</option>
+            <option value="2">satisfied</option>
+            <option value="3">less satisfied</option>
+            <option value="4">would not recommend</option>
+            <option value="5">not satisfied at all</option>
+        </select>
+
+        <p>Did the product meet your expectations?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>select an option</option>
+            <option value="1">yes</option>
+            <option value="2">no</option>
+            <option value="3">in most cases</option>
+        </select>
+
+        <p>Was the product able to fix your problem?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>select an option</option>
+            <option value="1">yes</option>
+            <option value="2">no</option>
+            <option value="3">in most cases</option>
+        </select>
+
+        <div class="recommend">
+            <p>Would you recommend the company in general?</p>
+            <label><input name="recommendation1" type="radio" value="recommendation1" checked> Definitely</label><br><br>
+            <label><input name="recommendation1" type="radio" value="recommendation1"> Possibly</label><br><br>
+            <label><input name="recommendation1" type="radio" value="recommendation1"> In no case</label><br><br>
+        </div>
+
+        <p>Have you already had contact with our customer service?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>select an option</option>
+            <option value="1">yes</option>
+            <option value="2">no</option>
+        </select>
+
+        <p>How would you describe our customer service? (multiple options possible)</p>
+        <label><input type="checkbox" value="solution-oriented"> solution-oriented</label><br>
+        <label><input type="checkbox" value="helpful"> helpful</label><br>
+        <label><input type="checkbox" value="expressive">expressive</label><br>
+        <label><input type="checkbox" value="authentic"> authentic</label><br>
+        <label><input type="checkbox" value="efficient"> efficient</label><br>
+        <label><input type="checkbox" value="motivated"> motivated</label><br>
+        <label><input type="checkbox" value="friendly"> friendly</label><br>
+        <label><input type="checkbox" value="appreciative"> appreciative</label><br>
+        <label><input type="checkbox" value="targeted"> targeted</label><br>
+        <label><input type="checkbox" value="reliable"> reliable</label><br><br>
+
+        <p>Was your problem solved by our customer service?</p>
+        <select id="dropdown" name="role" class="description-role" style="font-size:30px" required>
+            <option disabled selected value>select an option</option>
+            <option value="1">yes</option>
+            <option value="2">no</option>
+            <option value="3">in most cases</option>
+        </select>
+
+        <div class="recommend">
+            <p>Would you contact our customer service for your next problem again?</p>
+            <label><input name="recommendation2" type="radio" value="recommendation2" checked> Definitely</label><br><br>
+            <label><input name="recommendation2" type="radio" value="recommendation2"> Possibly</label><br><br>
+            <label><input name="recommendation2" type="radio" value="recommendation2"> In no case</label><br><br>
+        </div>
+
+        <p>Do you have any other comments or additions for us?</p>
+        <textarea placeholder="Feel free to leave us a comment in the space provided here."></textarea><br>
+        <button onclick="myFunctionEnglisch()" type="submit" id="submit" class="submit-button">Submit</button>
+
+        </form>
+</div>
+</div>
+
+</body>
+
+</html>
+
+</html>
