@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Umfrageformular | survey form</title>
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <script>
-        function myFunctionDeutsch(){
-        alert("Das Senden Ihrer Daten ist nicht erfolgt, da es sich hierbei nur um ein beispielhaftes Umfrageformular handelt.");
+        function myFunctionDeutsch() {
+            alert("Das Senden Ihrer Daten ist nicht erfolgt, da es sich hierbei nur um ein beispielhaftes Umfrageformular handelt.");
         }
 
-        function myFunctionEnglisch(){
-        alert("Your data has not been sent because this is only a exemplary survey form.");
+        function myFunctionEnglisch() {
+            alert("Your data has not been sent because this is only a exemplary survey form.");
         }
     </script>
 
     <div class="container">
-            <span class="dt">Deutsch</span>
-            <input type="checkbox" class="check">
             <span class="en">English</span>
+            <input type="checkbox" class="check">
+            <span class="dt">Deutsch</span>
             <div class="content contentDeutsch">
 
         <header>
-            <h1 id="title">Umfrageformular <i class="fa fa-file" aria-hidden="true"></i></h1>
+            <h1 class="title" id="title">Umfrageformular</h1>
             <p><em>Vielen Dank, dass Sie sich die Zeit nehmen, um an dieser Umfrage teilzunehmen. Bitte beantworten Sie die Fragen möglichst ehrlich und ohne viel nachzudenken.</em></p>
             <hr>
         </header>
@@ -136,7 +135,7 @@
 
     <div class="content contentEnglish">
         <header>
-            <h1 id="title">survey form <i class="fa fa-file" aria-hidden="true"></i></h1>
+            <h1 class="title" id="title">survey form</h1>
             <p><em>Thank you for taking the time to participate in this survey. Please answer the questions as honestly as possible and without thinking much.</em></p>
             <hr>
         </header>

@@ -1,20 +1,24 @@
 body {
     font-family: Helvetica, sans-serif;
-    background: linear-gradient( 142deg, #2909aa 0%, rgba(252, 70, 168, 1) 100%);
+    background: linear-gradient(142deg, #2909aa 0%, rgba(252, 70, 168, 1) 100%);
     color: white;
     margin: 20px 0 0 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
 }
+
+.container {
+    margin: 0;
+    padding: 0;
+}
  
 header {
     text-align: center;
 }
 
-#title {
-    text-shadow: violet -2px 0,
-                 blue 2px 0;
+.title {
+    text-shadow: violet -2px 0, blue 2px 0;
 }
  
 header p {
@@ -50,7 +54,7 @@ form {
     font-size: 15px;
 }
  
- input::placeholder {
+input::placeholder {
     color: blueviolet;
     font-size: 15px;
 }
@@ -61,7 +65,7 @@ form {
     color: blueviolet;
 }
  
- #dropdown option {
+#dropdown option {
     width: 150px;
     height: auto;
     color: blueviolet;
@@ -78,7 +82,7 @@ textarea::placeholder {
     padding: 10px;
 }
  
-#submit {
+.submit-button {
     background-color: #2909aa;
     border: none;
     border-radius: 15px;
@@ -89,24 +93,30 @@ textarea::placeholder {
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
+    border: 2px solid #2909aa;
 }
 
+.submit-button:hover {
+    background-color: #711ea9;
+    cursor: pointer;
+    border-color: #bc34a9;
+    border-width: 4px;
+}
 
 /*language-button starts here*/
-
 .dt {
-    padding: 20px;
-    color: blueviolet;
+    color: white;
     font-weight: bold;
 }
+
 .en {
-    padding: 20px;
+    color: white;
+    padding-left: 35px;
     font-weight: bold;
 }
 
 .container .content {
     display: none;
-    margin-top: 20px;
 }
 
 .container .content.contentEnglish {
@@ -117,20 +127,20 @@ textarea::placeholder {
     position: relative;
     width: 50px;
     appearance: inherit;
-    margin: 0;
+    margin: 16px;
 }
 
 .check:before {
     content: " ";
     position: absolute;
-    width: 50px;
+    width: 45px;
     height: 20px;
     border-radius: 20px;
     background-color: white;
 }
 
 .check:checked:before {
-    background-color: #333;
+    background-color: white;
 }
 
 .check:after {
@@ -139,15 +149,15 @@ textarea::placeholder {
     width: 20px;
     height: 20px;
     border-radius: 25px;
-    background-color: #333;
+    background-color: blueviolet;
     transition: 0.5s;
-    border: 2px solid #333;
+    border: 2px solid blueviolet;;
     box-sizing: border-box;
 }
 
 .check:checked:after {
     left: 25px;
-    border: 5px solid blueviolet;
+    border: 5px solid blueviolet;;
 }
 
 .check:checked~.content.contentDeutsch {
